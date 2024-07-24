@@ -1,0 +1,59 @@
+Description:
+You are tasked with creating a web application that interacts with a Neo4j graph database
+containing a collection of food recipes. The application should allow users to browse,
+search, filter and interact with recipes and related data such as ingredients, authors,
+collections, diet types, and keywords.
+Mandatory requirements:
+● Create a home page that displays all the recipes sorted alphabetically inside a table
+with a pagination of 20. The table should have the following columns: name, author,
+number of ingredients and skill level.
+● When clicking on a recipe the following details should be displayed in a manner of
+your own choosing: description, cooking time, preparation time and ingredients.
+● Implement a search by recipe name functionality that will allow the user to see in the
+table only the recipes that match his search criteria.
+● Implement a filter by ingredients functionality that will allow the user to see in the
+table only the recipes that match his filtering criteria.
+● When clicking on an author from the Authors column the user should see all the
+other published recipes of that author
+Optional requirements (presents an advantage):
+● Recipes table should support sorting by number of ingredients and skill level
+columns.
+● The detailed view of a recipe (when clicking on a recipe) should be enhanced with
+the list of the collections that recipe is part of and the keywords and the diet type
+associated with the recipe.
+● In the detailed view of a recipe, compute and present the 5 most similar recipes and
+show the similarity factor (a percentage or a label of how similar those 5 recipes are
+with the one selected).
+● In the home page, besides the table add a list or a visual representation with the:
+○ 5 most common ingredients found in the recipes.
+○ 5 most prolific authors.
+○ 5 most complex recipes.
+You can use any language you want, however, our recommendations are:
+Javascript (any JS Framework like Vue/React/Angular/ or VanillaJS), PHP, Java, NodeJS,
+.Net. You can also use a components library like Vuetify, AngularMaterial or anything similar
+in order to facilitate your work.
+
+The data needed by this web application is stored in a Neo4j graph database that can be
+accessed using the following URL and credentials:
+● EC2 Neo4j browser
+○ URL: http://34.232.57.230:7474/browser/
+○ User: neo4j
+○ Password: internship-2024
+● Bolt protocol
+○ URL: neo4j://34.232.57.230:7687
+○ User: neo4j
+○ Password: internship-2024
+Hints:
+● In order to visualize the DB schema in the neo4j browser, run the following command:
+Call db.schema.visualization()
+● The Bolt protocol facilitates the connection between your application and a Neo4j
+database through a driver. Check out a list of drivers based on your application’s
+programming language at:
+https://neo4j.com/docs/getting-started/languages-guides/
+Further reading:
+● https://neo4j.com/docs/browser-manual/current/visual-tour/
+● https://neo4j.com/docs/cypher-manual/current/introduction/cypher_overview/
+● https://neo4j.com/docs/cypher-manual/current/queries/concepts/
+● https://neo4j.com/docs/cypher-manual/current/queries/basic/
+● https://neo4j.com/docs/cypher-manual/current/planning-and-tuning/
+● https://neo4j.com/docs/getting-started/languages-guides/
