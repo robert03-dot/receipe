@@ -18,15 +18,16 @@ public class Receipe {
     private String description;
     private String cookingTime;
     private String keyLevel;
-    @ManyToMany
-    @JoinTable(
-            name = "ReceipeIngredients",
-            joinColumns = @JoinColumn(name = "receipeID"),
-            inverseJoinColumns = @JoinColumn(name = "ingredientID")
-    )
-    private List<Ingredients> ingredients;
-
-    @ManyToOne
-    @JoinColumn(name="author_id")
-    private Author author;
+//    @ManyToMany
+//    @JoinTable(
+//            name = "ReceipeIngredients",
+//            joinColumns = @JoinColumn(name = "receipeID"),
+//            inverseJoinColumns = @JoinColumn(name = "ingredientID")
+//    )
+//    @ToString.Exclude
+//    private List<Ingredients> ingredients;
+//
+//    @ManyToOne
+//    @JoinColumn(name="author_id")
+//    private Author author;
 }
