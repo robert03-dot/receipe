@@ -1,9 +1,8 @@
 package com.receipe.receipe;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 public class Author {
@@ -11,4 +10,6 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
+    @OneToMany(mappedBy = "author")
+    private List<Receipe> receipes;
 }
