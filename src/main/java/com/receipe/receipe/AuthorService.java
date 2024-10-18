@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
-public class AuthorService implements IAuthorService{
+public class AuthorService implements IAuthorService {
     @Autowired
     private AuthorInterface authorInterface;
+
     @Override
     public List<Author> getAllAuthors() {
         return authorInterface.findAll();
@@ -26,4 +28,5 @@ public class AuthorService implements IAuthorService{
     @Override
     public void deleteAuthor(long id) {
         authorInterface.deleteById(id);
-    }}
+    }
+}

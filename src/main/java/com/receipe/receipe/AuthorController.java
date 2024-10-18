@@ -13,6 +13,7 @@ public class AuthorController {
 
     @GetMapping
     public List<Author> getAllAuthors() {
+        System.out.println(authorService.getAllAuthors());
         return authorService.getAllAuthors();
         //in controller se apeleaza metodele din service
     }
