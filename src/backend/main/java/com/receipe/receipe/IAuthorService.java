@@ -7,4 +7,5 @@ public interface IAuthorService {
     Author getAuthorByID(long id);
     Author createAuthor(Author author);
     void deleteAuthor(long id);
+    void deleteAllAuthors();
 }

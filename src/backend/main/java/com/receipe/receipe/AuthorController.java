@@ -32,4 +32,8 @@ public class AuthorController {
     public void deleteAuthor(@PathVariable long id) {
         authorService.deleteAuthor(id);
     }
+    @DeleteMapping("/deleteAll")
+    public void deleteAllAuthors(){
+        authorService.deleteAllAuthors();
+    }
 }

@@ -29,4 +29,10 @@ public class AuthorService implements IAuthorService {
     public void deleteAuthor(long id) {
         authorInterface.deleteById(id);
     }
+
+    @Override
+    public void deleteAllAuthors() {
+        authorInterface.deleteAll();
+    }
+
 }
