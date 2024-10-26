@@ -2,12 +2,10 @@ package com.receipe.receipe;
 
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import java.util.List;
-
+@Table(name = "Author")
 @Entity
 @Getter
 @Setter
